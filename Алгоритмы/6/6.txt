@@ -1,0 +1,19 @@
+# задача 1
+import string, random
+def generator() :
+  arr = []
+  a = string.ascii_uppercase + string.ascii_lowercase + string.digits
+  for i in range (len (a)) :
+    arr.append( a [i] )
+  print(random.sample(arr, 10))
+generator()
+
+# задача 2
+def convert(str):
+    return (str[0].split())
+ 
+str = ['Peut-etre l’amour n’est-il au demeurant, qu’un mirage, un jeu trompeur de la lumiere et de l’esprit?']
+encoded = convert(str)
+hash = [ 16 , 'k' , 's' , 'a' , 1 , 'I' , 'S' , 'S' , 'h' , 0 , 's' , 'a' , 1 , 'g' , 'L' , 'E'  ]
+for i in zip(encoded, hash):
+   print(i)

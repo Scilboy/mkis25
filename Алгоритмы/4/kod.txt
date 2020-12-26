@@ -1,0 +1,13 @@
+def spisok(nam):
+    for i in range(len(nam)):
+        j=i-1
+        s=nam[i]
+        while nam[j]>s and j>=0:
+            nam[j+1]=nam[j]
+            j-=1
+        nam[j+1]=s
+    return nam
+print("Введите фамилии группы")
+nam = input()
+nam=nam.split()
+print(spisok(nam))
