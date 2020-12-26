@@ -1,0 +1,92 @@
+dmitriy@dmitriy-VirtualBox:~$ mkdir LABRAB
+dmitriy@dmitriy-VirtualBox:~$ cd LABRAB
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ mkdir A2
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ mkdir A1
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ cd A1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1$ mkdir B1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1$ mkdir B2
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1$ mkdir C2
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1$ cd B1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1$ mkdir C1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1$ cd C1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ touch text1.txt
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ touch text2.txt
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ cd LABRAB/A1/C2
+bash: cd: LABRAB/A1/C2: Нет такого файла или каталога
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ cd
+dmitriy@dmitriy-VirtualBox:~$ cd LABRAB/A1/C2
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/C2$ touch docs.doc
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/C2$ cat ~/LABRAB/A1/B1/C1/text1.txt ~/LABRAB/A1/B1/C1/text2.txt ~/LABRAB/A1/C2/docs.doc > ~/LABRAB/my.dat
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/C2$ cd ~/LABRAB
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ cat > my.dat
+1234567890
+^Z
+[1]+ Остановлен cat > my.dat
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ cd ~/LABRAB/A1/B1/C1
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ mv text1.txt text1.cpp
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ mv text2.txt text2.cpp
+dmitriy@dmitriy-VirtualBox:~/LABRAB/A1/B1/C1$ cd ~/LABRAB
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ more my.dat
+1234567890
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ tree
+
+Команда «tree» не найдена, но может быть установлена с помощью:
+
+sudo snap install tree # version 1.8.0+pkg-3fd6, or
+sudo apt install tree
+
+See 'snap info tree' for additional versions.
+
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ sudo apt update
+[sudo] пароль для dmitriy:
+Игн:1 http://ru.archive.ubuntu.com/ubuntu cosmic InRelease
+Игн:2 http://ru.archive.ubuntu.com/ubuntu cosmic-updates InRelease
+Игн:3 http://ru.archive.ubuntu.com/ubuntu cosmic-backports InRelease
+Игн:4 http://security.ubuntu.com/ubuntu cosmic-security InRelease
+Ошб:5 http://ru.archive.ubuntu.com/ubuntu cosmic Release
+404 Not Found [IP: 213.180.204.183 80]
+Ошб:6 http://ru.archive.ubuntu.com/ubuntu cosmic-updates Release
+404 Not Found [IP: 213.180.204.183 80]
+Ошб:7 http://security.ubuntu.com/ubuntu cosmic-security Release
+404 Not Found [IP: 91.189.88.142 80]
+Ошб:8 http://ru.archive.ubuntu.com/ubuntu cosmic-backports Release
+404 Not Found [IP: 213.180.204.183 80]
+Чтение списков пакетов… Готово
+E: Репозиторий «http://ru.archive.ubuntu.com/ubuntu cosmic Release» не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройке пользователя смотрите в справочной странице apt-secure(8).
+E: Репозиторий «http://ru.archive.ubuntu.com/ubuntu cosmic-updates Release» не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройке пользователя смотрите в справочной странице apt-secure(8).
+E: Репозиторий «http://security.ubuntu.com/ubuntu cosmic-security Release» больше не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройке пользователя смотрите в справочной странице apt-secure(8).
+E: Репозиторий «http://ru.archive.ubuntu.com/ubuntu cosmic-backports Release» не содержит файла Release.
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+N: Информацию о создании репозитория и настройке пользователя смотрите в справочной странице apt-secure(8).
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ tree
+
+Команда «tree» не найдена, но может быть установлена с помощью:
+
+sudo snap install tree # version 1.8.0+pkg-3fd6, or
+sudo apt install tree
+
+See 'snap info tree' for additional versions.
+
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ sudo snap install tree
+tree 1.8.0+pkg-3fd6 от 林博仁(Buo-ren, Lin) (brlin) установлен
+dmitriy@dmitriy-VirtualBox:~/LABRAB$ tree
+.
+├── A1
+│ ├── B1
+│ │ └── C1
+│ │ ├── text1.cpp
+│ │ └── text2.cpp
+│ ├── B2
+│ └── C2
+│ └── docs.doc
+├── A2
+└── my.dat
+
+6 directories, 4 files
+dmitriy@dmitriy-VirtualBox:~/LABRAB$
