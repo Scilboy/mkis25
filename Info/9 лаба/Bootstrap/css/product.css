@@ -1,0 +1,90 @@
+#product-1 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.button {
+    background: #F3F3F3;
+}
+
+.logo {
+    position: relative;
+    padding-top: 20px;
+}
+
+.navigation {
+    margin-top: 40px;
+    margin-right: 40px;
+    justify-self: end;
+    grid-column: 2;
+}
+
+#product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.p-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.p-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 450px;
+    background: #9A1212;
+    border-radius: 60px;
+    margin-top: 30px;
+}
+
+.p-descr {
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    margin-left: 55px;
+    text-align: center;
+}
+
+.p-img {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-image: url('../img/product1.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 82px;
+    margin-right: -25px;
+}
+
+.p2-img {
+    background-image: url('../img/product2.png');
+}
+
+.p3-img {
+    background-image: url('../img/product3.png');
+}
+
+.back-btn {
+    height: 60px;
+    width: 84px;
+    border-radius: 20px;
+    background: white;
+    margin-left: 40px;
+}
+
+.slide-left {
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.sheet-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
