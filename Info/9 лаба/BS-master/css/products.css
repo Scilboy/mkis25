@@ -1,0 +1,102 @@
+.hei100 {
+    height: 60vh;
+}
+
+.sheet-4 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.rect-1 {
+    position: absolute;
+    width: 180px;
+    height: 295px;
+    background: #C4C4C4;
+    border-radius: 34px;
+}
+
+.pr-1 {
+    background: url('../img/p-1.png');
+}
+
+.pr-2 {
+    background: url('../img/p-2.png');
+}
+
+.pr-3 {
+    background: url('../img/p-3.png');
+}
+
+.pr-4 {
+    background: url('../img/p-4.png');
+}
+
+.pr-5 {
+    background: url('../img/p-5.png');
+}
+
+.rect-2 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 180px;
+    height: 295px;
+    border-radius: 45px;
+    margin-left: 24px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .p-descr {
+        margin-left: 20px;
+    }
+    .p-box {
+        width: 700px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .p-descr {
+        margin-left: 10px;
+        font-size: 20px;
+        width: 300px;
+    }
+    .p-box {
+        width: 500px;
+        height: 300px;
+    }
+
+    .p-img {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .p-title {
+        text-align: center;
+    }
+    .p-descr {
+        margin-left: 10px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .p-box {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+
+    .p-img {
+        width: 200px;
+        border-radius: 50px;
+    }
+
+    .sheet-3 {
+        display: none;
+    }
+
+}
