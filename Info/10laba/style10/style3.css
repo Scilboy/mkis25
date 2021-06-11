@@ -1,0 +1,43 @@
+body {
+ 
+   display: flex
+ 
+}
+body {
+ 
+ ...
+ 
+ flex-direction: column
+ 
+}
+header,
+ 
+footer {
+ 
+  height: 20vh /*you can use pixels e.g. 200px*/
+ 
+}
+main {
+
+   flex: 1
+ 
+}
+main {
+   display: flex
+ 
+}
+nav, aside {
+ 
+  width: 20vw
+ 
+}
+article {
+ 
+   flex: 1
+ 
+}
+nav {
+ 
+  order: -1
+ 
+}

@@ -1,0 +1,16 @@
+.cards {
+ 
+   min-height: 100vh
+ 
+}
+.cards {
+ 
+  display: flex;
+ 
+  flex-wrap: wrap
+ 
+}
+.cards {
+  flex: 0 0 250px
+ align-items: center; justify-content: center
+}

@@ -1,0 +1,36 @@
+.row {
+ 
+   display: flex;
+ 
+}
+.row_cell {
+ 
+   flex: 1
+ 
+}
+.row_cell--2 {
+ 
+   flex: 2
+ 
+}
+.row_cell--3 {
+ 
+   flex: 3
+ 
+}
+.row--top {
+ 
+   align-items: flex-start
+ 
+}
+
+.row_cell--bottom {
+ 
+  align-self: flex-end
+ 
+}
+.row_cell--center {
+ 
+  align-self: center
+ 
+}
